@@ -46,17 +46,17 @@ import { NavbarComponent } from './navbar/navbar.component';
     RouterModule.forRoot(routes)
   ],
   providers: [
-    { provide: ApplicationDetailService, useClass: ApplicationDetailServiceFake },
-    // { provide: ApplicationDetailService, useClass: ApplicationDetailService },
+    // { provide: ApplicationDetailService, useClass: ApplicationDetailServiceFake },
+    { provide: ApplicationDetailService, useClass: ApplicationDetailService },
+  
+    // { provide: StatisticsService, useClass: StatisticsServiceFake },
+    { provide: StatisticsService, useClass: StatisticsService },
     
-    { provide: StatisticsService, useClass: StatisticsServiceFake },
-    // { provide: StatisticsService, useClass: StatisticsService },
+    // { provide: GetApplicationRowsService, useClass: GetApplicationRowsServiceFake },
+    { provide: GetApplicationRowsService, useClass: GetApplicationRowsService },
     
-    { provide: GetApplicationRowsService, useClass: GetApplicationRowsServiceFake },
-    // { provide: GetApplicationRowsService, useClass: GetApplicationRowsService },
-    
-    { provide: AuthService, useClass: AuthServiceFake },
-    // { provide: AuthService, useClass: AuthService },
+    // { provide: AuthService, useClass: AuthServiceFake },
+    { provide: AuthService, useClass: AuthService },
 
     {
       provide: HTTP_INTERCEPTORS,
