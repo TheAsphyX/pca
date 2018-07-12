@@ -9,8 +9,29 @@
     {{ msg.message }}
   </p>
   
+<br>
 
   <mat-card>
+      <h3>Riepilogo</h3>
+    
+      <p style="text-align: justify">
+      NOME E COGNOME : {{ domanda.firstName }} {{ domanda.lastName }}
+      </p>
+      <p style="text-align: justify">
+            EMAIL : {{ domanda.email }}
+      </p>
+      <p style="text-align: justify">
+      CODICE FISCALE : {{ domanda.fiscalCode }}
+      </p>
+      <p style="text-align: justify">
+      N. {{ domanda.workingDays }} GIORNI DI SERVIZIO AL 1/1/2018 PRESSO I COMANDI {{ domanda.businessUnits }}
+      </p>
+      <p style="text-align: justify">
+      PATENTE : {{ domanda.drivingLicense }}
+      </p>
+  </mat-card>
+
+  <!-- <mat-card>
     <mat-card-header>
       <mat-card-title>AL MINISTERO DELL'INTERNO - DIPARTIMENTO DEI VIGILI DEL FUOCO, DEL SOCCORSO PUBBLICO E DELLA DIFESA CIVILE </mat-card-title>
       <mat-card-subtitle>DIREZIONE CENTRALE PER GLI AFFARI GENERALI - Ufficio II - Affari concorsuali e contenzioso - Ufficio per la gestione dei concorsi d'accesso</mat-card-subtitle>
@@ -37,11 +58,11 @@
       <p style="text-align: justify">
           - di essere iscritto nell'elenco del Personale Volontario prima dell'1/1/2015; 
       </p>
-      <!-- <p style="text-align: justify">
-          - di essere attualmente iscritto presso l'elenco del personale volontario del {{ domanda.comando }};
-      </p> -->
       <p style="text-align: justify">
-          - di avere effettuato n. {{ domanda.workedDays }} giorni di servizio alla data dell'1/1/2018;
+          - di essere attualmente iscritto presso l'elenco del personale volontario del {{ domanda.comando }};
+      </p> 
+      <p style="text-align: justify">
+          - di avere effettuato n. {{ domanda.workingDays }} giorni di servizio alla data dell'1/1/2018;
       </p>
       <p style="text-align: center">
           presso il Comando prov.le di (indicare i Comandi presso cui si è prestato servizio):
@@ -55,7 +76,7 @@
       <p style="text-align: center">
           {{ domanda.drivingLicense }}
       </p>
-      <!-- <p style="text-align: justify">
+      <p style="text-align: justify">
           - di essere in possesso dei seguenti titoli preferenziali:
       </p>
       <p style="text-align: center">
@@ -63,7 +84,7 @@
       </p>
       <p style="text-align: justify">
       - di avere 1 figlio a carico; - di essere a conoscenza del testo integrale del bando di concorso.
-      </p> -->
+      </p>
       <div>
         Data {{ result.submittedAt }}             Firma __________________________________________________
       
@@ -72,8 +93,8 @@
 
       
     </mat-card-content>
-  </mat-card>
-  
+  </mat-card> -->
+  <br>
 
   <div class="button-row">
     <a href="javascript:window.print()">

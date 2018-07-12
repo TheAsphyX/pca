@@ -22,7 +22,7 @@ export class SubmissionResultComponent implements OnInit {
     this.result = this.applicationService.getLastResponse();
 
     this.domanda = JSON.parse(localStorage.getItem('domanda'));
-    console.log("domanda: ", this.domanda.fiscalCode);
+    //console.log("domanda: ", this.domanda.workingDays);
     
   }
 }
